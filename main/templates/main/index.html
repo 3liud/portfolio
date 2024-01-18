@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Styles will be added in the next part */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .body-wrapper{
+            width: 80%;
+            padding: 10%;
+            align: center;
+            font-align: justify;
+        }
+        
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        section {
+            margin-bottom: 1rem;
+        }
+        
+        section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+        
+        section div {
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            bottom: 0;
+        }
+        /* Hover Effect for Sections */
+    section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Style for Links */
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #4CAF50;
+        transform: scale(1.1);
+    }
+    .fade-in-section {
+        opacity: 0;
+        transition: opacity 0.6s ease-in-out;
+    }
+    
+    .fade-in-section.is-visible {
+        opacity: 1;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elvio's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="body-wrapper">
+        <section id="about">
+            <div class="content fade-in-section">
+                <h2>About Me</h2>
+                <p>
+                    As a dedicated data professional, my journey has been shaped by a relentless pursuit of turning data into actionable insights. 
+                    With a foundational education in computer science, I possess a robust analytical toolkit complemented by my expertise in 
+                    statistical analysis, machine learning, and data mining techniques.
+                </p>
+                <p>
+                    My professional path has seen me wear multiple hats – from spearheading data initiatives at 
+                    a burgeoning startup to steering complex data science projects in a corporate milieu. I've led the 
+                    charge in architecting data warehouses, crafting predictive models, and uncovering trends that inform 
+                    critical business strategies.
+                </p>
+                <p>
+                    I am particularly passionate about the integrity and ethical use of data, 
+                    which has led me to implement comprehensive data management frameworks. 
+                    These initiatives ensure not only regulatory compliance but also fortify data 
+                    security and foster a culture of data literacy across organizational structures.
+                </p>
+                <p>
+                    I actively engage with the wider data community, 
+                    contributing to research on the societal impacts of data 
+                    and artificial intelligence. My blog serves as a platform to 
+                    demystify the complexities of data science and to elucidate the transformative 
+                    power of data in addressing pressing challenges.
+                </p>
+                <p>
+                    In the ever-evolving landscape of data technology, my current focus is 
+                    on exploring the synergies between artificial intelligence and big data 
+                    ecosystems. I am deeply invested in understanding how these technologies can be harnessed to not 
+                    only predict but also shape future trends and behaviors.
+                </p>
+                <p>
+                    I believe in the power of data to revolutionize industries, drive innovation, 
+                    and enhance decision-making. If you're seeking a dynamic collaborator or a leader to navigate 
+                    the multifaceted world of data, I invite you to connect with me. Let's leverage the potential 
+                    of data together.
+                </p>
+            </div>
+            <img src="path_to_about_image.jpg" alt="About Image" class="fade-in-section">
+        </section>
+        
+
+        <section id="projects">
+            <div class="content fade-in-section">
+                <h2>Projects</h2>
+                <p>
+                    My portfolio of projects is a testament to my commitment to solving complex data problems. Here's a highlight of some of the initiatives I've led and contributed to, demonstrating my approach to data analysis, machine learning, and system design:
+                </p>
+        
+                <div class="project-item fade-in-section">
+                    <h3>Customer Segmentation Engine</h3>
+                    <p>
+                        Utilizing unsupervised learning techniques, I developed a customer segmentation engine for a retail client that grouped consumers based on purchasing behavior. This tool empowered the marketing team to tailor their strategies to each segment, resulting in a 20% increase in campaign engagement rates.
+                    </p>
+                </div>
+        
+                <div class="project-item fade-in-section">
+                    <h3>Real-time Fraud Detection System</h3>
+                    <p>
+                        I architected a real-time fraud detection system using a combination of statistical methods and machine learning algorithms. This system reduced fraudulent transactions by 35% and was recognized for its innovative use of anomaly detection techniques.
+                    </p>
+                </div>
+        
+                <div class="project-item fade-in-section">
+                    <h3>Data Governance Framework</h3>
+                    <p>
+                        Recognizing the importance of data integrity, I designed and implemented a data governance framework for a financial institution. This framework standardized data practices, ensuring quality and compliance, and laid the groundwork for secure and effective data exploration.
+                    </p>
+                </div>
+        
+                <div class="project-item fade-in-section">
+                    <h3>Supply Chain Optimization Model</h3>
+                    <p>
+                        In response to supply chain inefficiencies, I created an optimization model that streamlined operations and reduced costs by 15%. This project involved complex data analysis and the development of a predictive model that identified bottlenecks and predicted inventory requirements.
+                    </p>
+                </div>
+                
+                <!-- Additional project items can be added here -->
+                
+                <p>
+                    These projects represent just a slice of my portfolio. I am always looking for new challenges and opportunities to push the boundaries of what's possible with data.
+                </p>
+            </div>
+            <img src="path_to_projects_image.jpg" alt="Projects Image" class="fade-in-section">
+        </section>
+        
+
+        <section id="blogs">
+            <div>
+                <h2>Blogs</h2>
+                <p><!-- Blogs content goes here --></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2>Contact</h2>
+                <p><!-- Contact content goes here --></p>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <p>Footer content goes here</p>
+    </footer>
+
+    <script>
+        // Detect request animation frame
+        var scroll = window.requestAnimationFrame ||
+                     // IE Fallback
+                     function(callback){ window.setTimeout(callback, 1000/60)};
+        var elementsToShow = document.querySelectorAll('.fade-in-section');
+        
+        function loop() {
+        
+            elementsToShow.forEach(function (element) {
+              if (isElementInViewport(element)) {
+                element.classList.add('is-visible');
+              } else {
+                element.classList.remove('is-visible');
+              }
+            });
+        
+            scroll(loop);
+        }
+        
+        // Call the loop for the first time
+        loop();
+        
+        function isElementInViewport(el) {
+          // special bonus for those using jQuery
+          if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+          }
+          var rect = el.getBoundingClientRect();
+          return (
+            (rect.top <= 0
+              && rect.bottom >= 0)
+            ||
+            (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+            ||
+            (rect.top >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+          );
+        }
+        </script>
+        
+</body>
+</html>
